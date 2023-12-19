@@ -1,0 +1,177 @@
+Base styles for all fields
+#wpcontent {
+  padding-left: 0 !important;
+}
+
+label {
+    font-weight:600;
+}
+
+.table-success {
+  border-radius: 5px;
+}
+
+.rd-inventory-field-group {
+  line-height: 0.6em;
+}
+
+.rd-inventory-field.half-width {
+  width: 48%; /* Slightly less than half to account for margins */
+  box-sizing: border-box;
+}
+
+.rd-inventory-gallery-field {
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.rd-inventory-gallery-field label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.gallery-thumbnails {
+  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 10px;
+  overflow: scroll;
+  padding: 2em 0;
+}
+
+.gallery-thumbnail {
+  display: flex;
+  margin-right: 10px;
+  position: relative;
+  border: 1px solid #ccd0d4;
+  padding: 4px;
+  box-sizing: border-box;
+  flex: 0 0 auto;
+}
+
+.gallery-thumbnail img {
+  display: block;
+  height: auto;
+}
+
+.remove-image {
+  display: inline-block;
+  background: #ca4a1f;
+  color: #fff;
+  border: none;
+  padding: 4px 6px;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.remove-image:hover,
+.remove-image:focus {
+  background: #d94f3f;
+  outline: none;
+}
+
+#add_gallery_image {
+  display: block;
+  background: #0073aa;
+  color: #fff;
+  border: none;
+  padding: 8px 10px;
+  margin-top: 10px;
+  border-radius: 4px;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+#add_gallery_image:hover,
+#add_gallery_image:focus {
+  background: #006799;
+  outline: none;
+}
+
+.sortable-placeholder {
+  border: 1px dashed #ccc;
+  margin: 0 0.5em 1em 0.5em;
+  height: 120px;
+}
+
+#rdis-upload-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#rdis-matching,
+#rdis-scanner-form {
+  display: inherit;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#rdis-drop-zone,
+#image-cropping-container {
+  display: inherit;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 75vw;
+  border: 1px black dashed;
+  border-radius: 25px;
+  align-items: center;
+  padding: 3em;
+}
+
+#rdis-drop-zone {
+  height: max-content;
+}
+
+#image-cropping-container {
+  height: 33vh;
+}
+
+#rdis-drop-zone h3 {
+  padding: 0 2em;
+}
+
+#scanner-add-inventory,
+#scanner-sell-inventory,
+.rdis-scanner-submit,
+#manualInputButton,
+#confirm-match,
+#deny-match,
+#sale-price-next,
+#cust-info-next {
+  padding: 1em;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#confirm-match {
+  margin-right: 1em;
+}
+
+.rdis-scanner-logo {
+  max-width: 80vw;
+}
+
+#matched-item {
+  line-height: normal;
+}
+
+#sale-price-div {
+  display: flex;
+  padding: 2em;
+  flex-direction: column;
+}
+
+#sale-price,
+#sale-qty {
+  flex-direction: row;
+  margin-bottom: 1em;
+}
